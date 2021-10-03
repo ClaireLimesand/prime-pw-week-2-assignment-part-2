@@ -78,7 +78,7 @@ console.log(secret)
 //If that's false, we check if 'isStudent' is false and 'age' is <30. If so we console.log 'What are your hobbies?'
 //If that too is false, we check if 'isStudent' is true. If so we console.log 'Welcome to Prime!'
 //Lastly, if none of the above cases are true, we console.log 'How about the weater?'
-//In our case, we console log 'Welcome to Prime!'
+//In this case, we console log 'Welcome to Prime!'
 //CODE
 /*
 let isStudent = true;
@@ -137,10 +137,14 @@ if (number >= 2) {
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
+//FIX instructions say colorOne is blue and colorTwo is red. It is reversed
+//should be let colorOne = 'blue'; let colorTwo = 'red';
 
 if (mix === true) {
   colorOne = 'purple';
 }
+//FIX it says both should be set to 'purple' but here it is only colorOne
+//should be if (mix === true) { colorOne = 'purple'; colorTwo = purple; }
 */
 
 //5. We start with two variables -- temp is set to 40 and time is set to 4.
@@ -154,11 +158,13 @@ const time = 4;
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
+//FIX instructions say to check temp AND time but this uses || which means OR
+//should be if (temp > 39 && time >= 4)
 */
 
 //6. We start with two variables -- age is set to 21 and minAge is set to 21.
 // We check if age is greater than or equal to minAge
-// -- it is, so we console.log 'enter'.
+// -- it is, so we console.log 'enter'
 
 /*
 let age = 21;
@@ -169,4 +175,11 @@ if(minAge <= age) {
 } else {
   console.log('enter');
 }
+//FIX this works, but the instructions ask if age>=minAge this does the reverse
+//should be:
+//if(age >= minAge) {
+    console.log('enter');
+  } else {
+    console.log('no entry');
+  }
 */
